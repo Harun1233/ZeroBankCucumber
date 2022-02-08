@@ -1,11 +1,5 @@
 package com.zerobank.utilities;
 
-
-
-
-
-
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -15,24 +9,25 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
-    private Driver() {
 
-    }
+    private Driver() {}
 
     private static WebDriver driver;
 
     public static WebDriver get() {
-        // Test
         if (driver == null) {
-            // this line will tell which browser should open based on the value from properties file
             String browser = ConfigurationReader.get("browser");
             switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    ChromeOptions capability = new ChromeOptions();
+                    capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+                    capability.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+                    driver=new ChromeDriver(capability);
                     break;
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
@@ -68,6 +63,8 @@ public class Driver {
                     break;
             }
 
+
+
         }
 
         return driver;
@@ -80,5 +77,6 @@ public class Driver {
         }
     }
 }
+
 
 
