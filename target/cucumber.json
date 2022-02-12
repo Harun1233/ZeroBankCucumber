@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6324322400,
+              "duration": 4336455500,
               "status": "passed"
             },
             "line": 6,
@@ -24,8 +24,8 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-12T16:30:54.006Z",
-        "line": 8,
+        "start_timestamp": "2022-02-12T16:48:15.248Z",
+        "line": 9,
         "name": "",
         "description": "",
         "id": "users-should-be-able-to-login-only-with-valid-credentials;",
@@ -34,11 +34,10 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials(LoginDefinitions.java:17)\r\n\tat ✽.user enters valid credentials(file:///C:/Users/Home/IdeaProjects/ZeroBankCucumber/src/test/resources/features/login.feature:9)\r\n",
-              "duration": 7995500,
-              "status": "pending"
+              "duration": 2269087000,
+              "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "user enters valid credentials",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
@@ -47,81 +46,13 @@
           },
           {
             "result": {
-              "duration": 999600,
-              "status": "skipped"
+              "duration": 15991500,
+              "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "user should be able to login",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_be_able_to_login()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 213472100,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user is on the login page",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-12T16:31:00.529Z",
-        "line": 12,
-        "name": "",
-        "description": "",
-        "id": "users-should-be-able-to-login-only-with-valid-credentials;",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.zerobank.stepdefinitions.LoginDefinitions.user_enters_invalid_credentials(LoginDefinitions.java:28)\r\n\tat ✽.user enters invalid credentials(file:///C:/Users/Home/IdeaProjects/ZeroBankCucumber/src/test/resources/features/login.feature:13)\r\n",
-              "duration": 1000600,
-              "status": "pending"
-            },
-            "line": 13,
-            "name": "user enters invalid credentials",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_invalid_credentials()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "user should se \"Login and/or password are wrong.\" message",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Login and/or password are wrong.\"",
-                  "offset": 15
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_se_message(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -138,15 +69,6 @@
     "id": "users-should-be-able-to-login-only-with-valid-credentials",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/login.feature",
-    "tags": [
-      {
-        "name": "@wip",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "tags": []
   }
 ]
