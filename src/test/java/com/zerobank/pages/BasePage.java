@@ -9,4 +9,8 @@ public abstract class BasePage {
     }
 
 
+    public String getUrl(){
+
+        return Driver.get().getCurrentUrl();
+    }
 }
