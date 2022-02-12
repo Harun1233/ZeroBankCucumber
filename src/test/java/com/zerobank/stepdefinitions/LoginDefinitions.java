@@ -31,13 +31,13 @@ public class LoginDefinitions {
 
     @Given("user enters invalid credentials")
     public void user_enters_invalid_credentials() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+       new HomePage().invlaidSignIn();
     }
-    @Then("user should se {string} message")
-    public void user_should_se_message(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("user should see {string} message")
+    public void user_should_see_message(String string) {
+        String warningMessageText = new HomePage().loginWarningMessage.getText();
+
+        Assert.assertEquals("Verify that user see the warning message",string,warningMessageText);
     }
 
 }

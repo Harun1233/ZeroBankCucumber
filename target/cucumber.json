@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4336455500,
+              "duration": 4638801400,
               "status": "passed"
             },
             "line": 6,
@@ -24,8 +24,8 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-12T16:48:15.248Z",
-        "line": 9,
+        "start_timestamp": "2022-02-12T16:58:39.678Z",
+        "line": 13,
         "name": "",
         "description": "",
         "id": "users-should-be-able-to-login-only-with-valid-credentials;",
@@ -34,25 +34,31 @@
         "steps": [
           {
             "result": {
-              "duration": 2269087000,
+              "duration": 1821926000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user enters valid credentials",
+            "line": 14,
+            "name": "user enters invalid credentials",
             "match": {
-              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_invalid_credentials()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 15991500,
+              "duration": 52121400,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user should be able to login",
+            "line": 15,
+            "name": "user should see \"Login and/or password are wrong.\" message",
             "match": {
-              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_be_able_to_login()"
+              "arguments": [
+                {
+                  "val": "\"Login and/or password are wrong.\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_see_message(java.lang.String)"
             },
             "keyword": "Then "
           }

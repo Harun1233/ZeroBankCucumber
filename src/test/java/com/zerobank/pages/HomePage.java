@@ -19,6 +19,9 @@ public class HomePage extends BasePage{
     @FindBy (xpath = "//input[@type='submit']")
     public WebElement signInClickButton;
 
+    @FindBy(css = ".alert")
+    public WebElement loginWarningMessage;
+
     public void validSignIn(){
 
         homeSignInButton.click();
@@ -30,6 +33,21 @@ public class HomePage extends BasePage{
         signInClickButton.click();
 
         Driver.get().navigate().back();
+
+
+    }
+
+    public void invlaidSignIn(){
+        homeSignInButton.click();
+
+        userNameBox.sendKeys(ConfigurationReader.get("wrongusername"));
+
+        passwordBox.sendKeys(ConfigurationReader.get("wrongpassword"));
+
+        signInClickButton.click();
+
+
+
 
 
     }

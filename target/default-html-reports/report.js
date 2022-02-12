@@ -30,21 +30,21 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user enters valid credentials",
+  "name": "user enters invalid credentials",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
+  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_invalid_credentials()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should be able to login",
+  "name": "user should see \"Login and/or password are wrong.\" message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_be_able_to_login()"
+  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_see_message(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
