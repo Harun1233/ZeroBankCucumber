@@ -9,7 +9,7 @@ Feature: Users should be able to login only with valid credentials
   Scenario:
     Given user enters valid credentials
     Then user should be able to login
-  @wip
+
   Scenario:
     Given user enters invalid credentials
     Then user should see "Login and/or password are wrong." message

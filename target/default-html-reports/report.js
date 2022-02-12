@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/accountsummary.feature");
 formatter.feature({
-  "name": "Users should be able to login only with valid credentials",
+  "name": "Account summary page",
   "description": "",
   "keyword": "Feature"
 });
@@ -22,8 +22,18 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "user enters valid credentials",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "",
+  "name": "Account summary page title verification",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -33,25 +43,27 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user enters invalid credentials",
+  "name": "navigate to Account summary page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_invalid_credentials()"
+  "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.navigate_to_Account_summary_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should see \"Login and/or password are wrong.\" message",
+  "name": "verify that the page title is \"Zero – Account summary\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_see_message(java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.verify_that_the_page_title_is(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: Verify the title\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.verify_that_the_page_title_is(AccountSummaryPageDefinitions.java:22)\r\n\tat ✽.verify that the page title is \"Zero – Account summary\"(file:///C:/Users/Home/IdeaProjects/ZeroBankCucumber/src/test/resources/features/accountsummary.feature:10)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

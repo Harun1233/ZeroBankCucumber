@@ -35,4 +35,9 @@ public abstract class BasePage {
 
         onlineBankingButton.click();
     }
+
+    public String getTitle(){
+
+        return Driver.get().getTitle();
+    }
 }
