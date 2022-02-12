@@ -25,6 +25,8 @@ public class LoginDefinitions {
     @Then("user should be able to login")
     public void user_should_be_able_to_login() {
         String url = new HomePage().getUrl();
+        
+        
 
         Assert.assertTrue("Verify that user is on home page",url.contains("index"));
     }
@@ -36,6 +38,7 @@ public class LoginDefinitions {
     @Then("user should see {string} message")
     public void user_should_see_message(String string) {
         String warningMessageText = new HomePage().loginWarningMessage.getText();
+
 
         Assert.assertEquals("Verify that user see the warning message",string,warningMessageText);
     }

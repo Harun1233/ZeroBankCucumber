@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4638801400,
+              "duration": 4468718300,
               "status": "passed"
             },
             "line": 6,
@@ -24,17 +24,39 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-12T16:58:39.678Z",
+        "start_timestamp": "2022-02-12T17:03:46.103Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4997000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
         "line": 13,
         "name": "",
         "description": "",
         "id": "users-should-be-able-to-login-only-with-valid-credentials;",
+        "after": [
+          {
+            "result": {
+              "duration": 862053200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1821926000,
+              "duration": 1414205800,
               "status": "passed"
             },
             "line": 14,
@@ -46,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 52121400,
+              "duration": 49970400,
               "status": "passed"
             },
             "line": 15,

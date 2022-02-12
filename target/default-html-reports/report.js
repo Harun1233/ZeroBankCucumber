@@ -9,6 +9,9 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "user is on the login page",
   "keyword": "Given "
@@ -47,6 +50,9 @@ formatter.match({
   "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_see_message(java.lang.String)"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });
