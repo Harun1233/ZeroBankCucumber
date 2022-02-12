@@ -18,9 +18,11 @@ formatter.step({
   "name": "user is on the login page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "",
@@ -36,17 +38,22 @@ formatter.step({
   "name": "user enters valid credentials",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
+});
 formatter.result({
-  "status": "undefined"
+  "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials(LoginDefinitions.java:17)\r\n\tat ✽.user enters valid credentials(file:///C:/Users/Home/IdeaProjects/ZeroBankCucumber/src/test/resources/features/login.feature:9)\r\n",
+  "status": "pending"
 });
 formatter.step({
   "name": "user should be able to login",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_be_able_to_login()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.background({
   "name": "",
@@ -57,9 +64,11 @@ formatter.step({
   "name": "user is on the login page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "",
@@ -75,16 +84,21 @@ formatter.step({
   "name": "user enters invalid credentials",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_invalid_credentials()"
+});
 formatter.result({
-  "status": "undefined"
+  "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.zerobank.stepdefinitions.LoginDefinitions.user_enters_invalid_credentials(LoginDefinitions.java:28)\r\n\tat ✽.user enters invalid credentials(file:///C:/Users/Home/IdeaProjects/ZeroBankCucumber/src/test/resources/features/login.feature:13)\r\n",
+  "status": "pending"
 });
 formatter.step({
   "name": "user should se \"Login and/or password are wrong.\" message",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_se_message(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 });

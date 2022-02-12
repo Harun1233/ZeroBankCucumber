@@ -1,6 +1,7 @@
 @wip
 Feature: Users should be able to login only with valid credentials
 
+
   Background:
     Given user is on the login page
 

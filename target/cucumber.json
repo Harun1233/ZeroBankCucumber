@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,18 +11,21 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 6324322400,
+              "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "user is on the login page",
-            "match": {},
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2022-02-12T16:27:00.199Z",
-        "line": 7,
+        "start_timestamp": "2022-02-12T16:30:54.006Z",
+        "line": 8,
         "name": "",
         "description": "",
         "id": "users-should-be-able-to-login-only-with-valid-credentials;",
@@ -31,20 +34,27 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials(LoginDefinitions.java:17)\r\n\tat ✽.user enters valid credentials(file:///C:/Users/Home/IdeaProjects/ZeroBankCucumber/src/test/resources/features/login.feature:9)\r\n",
+              "duration": 7995500,
+              "status": "pending"
             },
-            "line": 8,
+            "line": 9,
             "name": "user enters valid credentials",
-            "match": {},
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 999600,
+              "status": "skipped"
             },
-            "line": 9,
+            "line": 10,
             "name": "user should be able to login",
-            "match": {},
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_be_able_to_login()"
+            },
             "keyword": "Then "
           }
         ],
@@ -55,7 +65,7 @@
         ]
       },
       {
-        "line": 4,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -63,18 +73,21 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 213472100,
+              "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "user is on the login page",
-            "match": {},
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2022-02-12T16:27:00.407Z",
-        "line": 11,
+        "start_timestamp": "2022-02-12T16:31:00.529Z",
+        "line": 12,
         "name": "",
         "description": "",
         "id": "users-should-be-able-to-login-only-with-valid-credentials;",
@@ -83,20 +96,33 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.zerobank.stepdefinitions.LoginDefinitions.user_enters_invalid_credentials(LoginDefinitions.java:28)\r\n\tat ✽.user enters invalid credentials(file:///C:/Users/Home/IdeaProjects/ZeroBankCucumber/src/test/resources/features/login.feature:13)\r\n",
+              "duration": 1000600,
+              "status": "pending"
             },
-            "line": 12,
+            "line": 13,
             "name": "user enters invalid credentials",
-            "match": {},
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_invalid_credentials()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 13,
+            "line": 14,
             "name": "user should se \"Login and/or password are wrong.\" message",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login and/or password are wrong.\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_should_se_message(java.lang.String)"
+            },
             "keyword": "Then "
           }
         ],

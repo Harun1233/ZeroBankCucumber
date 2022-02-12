@@ -13,8 +13,7 @@ public class LoginDefinitions {
     }
     @Given("user enters valid credentials")
     public void user_enters_valid_credentials() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
     @Then("user should be able to login")
     public void user_should_be_able_to_login() {
