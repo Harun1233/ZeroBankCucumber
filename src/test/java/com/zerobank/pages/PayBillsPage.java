@@ -32,16 +32,16 @@ public class PayBillsPage extends BasePage{
 
 
 
-    public void succesForm(){
+    public void succesForm(String amount, String date){
 
         BrowserUtils.waitFor(2);
         new Select(payeeDropDown).selectByValue("sprint");
         BrowserUtils.waitFor(2);
         new Select(accountDropDown).selectByValue("1");
         BrowserUtils.waitFor(2);
-        amountInputBox.sendKeys("5");
+        amountInputBox.sendKeys(amount);
         BrowserUtils.waitFor(2);
-        dateInputBox.sendKeys("13022022");
+        dateInputBox.sendKeys(date);
         BrowserUtils.waitFor(2);
         descriptionInputBox.sendKeys("description");
         BrowserUtils.waitFor(2);

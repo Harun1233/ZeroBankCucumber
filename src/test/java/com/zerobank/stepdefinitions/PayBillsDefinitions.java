@@ -1,9 +1,16 @@
 package com.zerobank.stepdefinitions;
 
 import com.zerobank.pages.PayBillsPage;
+import com.zerobank.utilities.BrowserUtils;
+import com.zerobank.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PayBillsDefinitions {
 
@@ -11,7 +18,7 @@ public class PayBillsDefinitions {
 
     @Given("user completes the form succesfully")
     public void user_completes_the_form_succesfully() {
-        payBillsPage.succesForm();
+        payBillsPage.succesForm("5","13022022");
 
     }
 
@@ -25,20 +32,29 @@ public class PayBillsDefinitions {
 
     @Given("user tries to complete payment without inserting amount")
     public void user_tries_to_complete_payment_without_inserting_amount() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        payBillsPage.succesForm("","13022022");
     }
 
-    @Given("warning message {string} message is popped up")
-    public void warning_message_message_is_popped_up(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+    @Then("warning message {string} message is popped up for {string}")
+    public void warning_message_message_is_popped_up_for(String message, String type) {
+        String actualText = Driver.get().findElement(By.name(type)).getAttribute("validationMessage");
+
+        System.out.println("actualText = " + actualText);
+
+        BrowserUtils.waitFor(3);
+
+        Assert.assertTrue("Verify the pop up alert message",actualText.equals(message));
+
     }
+
+
 
     @Given("user tries to complete payment without inserting date")
     public void user_tries_to_complete_payment_without_inserting_date() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        payBillsPage.dateInputBox.clear();
+        payBillsPage.succesForm("5","");
+
     }
 
 

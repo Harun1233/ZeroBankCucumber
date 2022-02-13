@@ -1,4 +1,3 @@
-
 Feature: Pay Bills page
 
   Background:
@@ -8,16 +7,20 @@ Feature: Pay Bills page
 
   Scenario: Verify the page title
     Then verify that the page title is "Zero - Pay Bills"
-  @wip
+
   Scenario: Complete the form succesfully, and verify the message
     Given user completes the form succesfully
     Then verify that "The payment was successfully submitted." message is displayed
 
-  Scenario: Warning message should display when user tries to complete the payment without entering amount or date
+  @wip
+  Scenario: Warning message should display when user tries to complete the payment without entering amount
     Given user tries to complete payment without inserting amount
-    And warning message "Please fill in this field." message is popped up
+    And warning message "Please fill in this field." message is popped up for "amount"
+
+  @wip
+  Scenario: Warning message should display when user tries to complete the payment without entering  date
     And user tries to complete payment without inserting date
-    Then warning message "Please fill in this field." message is popped up
+    Then warning message "Please fill in this field." message is popped up for "date"
 
   Scenario: Amount section should not accept characters apart from numbers
     Given user completes the payment form by inserting invalid characters into amount input box

@@ -1,9 +1,9 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1321945300,
+              "duration": 1079936700,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "user is on the login page",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 2784969200,
+              "duration": 2799584900,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "user enters valid credentials",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
@@ -35,10 +35,10 @@
           },
           {
             "result": {
-              "duration": 1593476800,
+              "duration": 1204978000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "navigate to \"pay_bills\" page",
             "match": {
               "arguments": [
@@ -54,11 +54,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-13T21:55:18.588Z",
+        "start_timestamp": "2022-02-13T22:38:55.800Z",
         "before": [
           {
             "result": {
-              "duration": 3311474100,
+              "duration": 3164638100,
               "status": "passed"
             },
             "match": {
@@ -66,14 +66,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "Complete the form succesfully, and verify the message",
+        "line": 16,
+        "name": "Warning message should display when user tries to complete the payment without entering amount",
         "description": "",
-        "id": "pay-bills-page;complete-the-form-succesfully--and-verify-the-message",
+        "id": "pay-bills-page;warning-message-should-display-when-user-tries-to-complete-the-payment-without-entering-amount",
         "after": [
           {
             "result": {
-              "duration": 1038068000,
+              "duration": 1089183500,
               "status": "passed"
             },
             "match": {
@@ -86,31 +86,158 @@
         "steps": [
           {
             "result": {
-              "duration": 31313803300,
+              "duration": 12815676400,
               "status": "passed"
             },
-            "line": 13,
-            "name": "user completes the form succesfully",
+            "line": 17,
+            "name": "user tries to complete payment without inserting amount",
             "match": {
-              "location": "com.zerobank.stepdefinitions.PayBillsDefinitions.user_completes_the_form_succesfully()"
+              "location": "com.zerobank.stepdefinitions.PayBillsDefinitions.user_tries_to_complete_payment_without_inserting_amount()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 76958000,
+              "duration": 3040078400,
               "status": "passed"
             },
-            "line": 14,
-            "name": "verify that \"The payment was successfully submitted.\" message is displayed",
+            "line": 18,
+            "name": "warning message \"Please fill in this field.\" message is popped up for \"amount\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"The payment was successfully submitted.\"",
+                  "val": "\"Please fill in this field.\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"amount\"",
+                  "offset": 70
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsDefinitions.warning_message_message_is_popped_up_for(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1285292900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2523745700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1259917300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to \"pay_bills\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pay_bills\"",
                   "offset": 12
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.PayBillsDefinitions.verify_that_message_is_displayed(java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-13T22:39:21.162Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1747027800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Warning message should display when user tries to complete the payment without entering  date",
+        "description": "",
+        "id": "pay-bills-page;warning-message-should-display-when-user-tries-to-complete-the-payment-without-entering--date",
+        "after": [
+          {
+            "result": {
+              "duration": 943529300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12833609300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user tries to complete payment without inserting date",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefinitions.user_tries_to_complete_payment_without_inserting_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3048040300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "warning message \"Please fill in this field.\" message is popped up for \"date\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill in this field.\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"date\"",
+                  "offset": 70
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsDefinitions.warning_message_message_is_popped_up_for(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           }
