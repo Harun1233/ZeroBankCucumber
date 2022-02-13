@@ -1,0 +1,132 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1321945300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2784969200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1593476800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "navigate to \"pay_bills\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pay_bills\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-13T21:55:18.588Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3311474100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Complete the form succesfully, and verify the message",
+        "description": "",
+        "id": "pay-bills-page;complete-the-form-succesfully--and-verify-the-message",
+        "after": [
+          {
+            "result": {
+              "duration": 1038068000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31313803300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user completes the form succesfully",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDefinitions.user_completes_the_form_succesfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 76958000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify that \"The payment was successfully submitted.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The payment was successfully submitted.\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.PayBillsDefinitions.verify_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Pay Bills page",
+    "description": "",
+    "id": "pay-bills-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/paybills.feature",
+    "tags": []
+  }
+]
