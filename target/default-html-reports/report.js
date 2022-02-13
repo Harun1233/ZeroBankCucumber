@@ -33,7 +33,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Account summary page title verification",
+  "name": "Account summary pages should have the given account type",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -53,17 +53,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify that the page title is \"Zero – Account summary\"",
+  "name": "verify that following given account types are displayed on the page",
+  "rows": [
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.verify_that_the_page_title_is(java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.verify_that_following_given_account_types_are_displayed_on_the_page(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: Verify the title\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.verify_that_the_page_title_is(AccountSummaryPageDefinitions.java:22)\r\n\tat ✽.verify that the page title is \"Zero – Account summary\"(file:///C:/Users/Home/IdeaProjects/ZeroBankCucumber/src/test/resources/features/accountsummary.feature:10)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

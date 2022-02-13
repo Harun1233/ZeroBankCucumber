@@ -5,6 +5,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
+import java.util.List;
+
 public class AccountSummaryPageDefinitions {
     AccountSummaryPage accountSummaryPage=new AccountSummaryPage();
 
@@ -23,53 +25,25 @@ public class AccountSummaryPageDefinitions {
 
     }
 
-    @Then("verify that following Cash Accounts are displayed")
-    public void verify_that_following_Cash_Accounts_are_displayed() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("verify that following given account types are displayed on the page")
+    public void verify_that_following_given_account_types_are_displayed_on_the_page(List<String> pageAccountTypes) {
+        String pageAccountTypeText = new AccountSummaryPage().pageAccountTypeText();
+
+
+
+        for (String pageAccountType : pageAccountTypes) {
+
+            Assert.assertTrue("Verify given account types are displayed on page",pageAccountTypeText.contains(pageAccountType));
+        }
+
     }
 
-    @Then("verify that following Account are displayed under Credit Accounts")
-    public void verify_that_following_Account_are_displayed_under_Credit_Accounts() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("verify that following given account types are displayed under Credit Accounts column")
+    public void verify_that_following_given_account_types_are_displayed_under_Credit_Accounts_column(List<String> creditAccountTypes) {
+
     }
 
-    @Then("verify that following Investment Accounts are displayed")
-    public void verify_that_following_Investment_Accounts_are_displayed() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
 
-    @Then("verify that following Credit Card are displayed under Credit Accounts")
-    public void verify_that_following_Credit_Card_are_displayed_under_Credit_Accounts() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-    @Then("verify that following Credit Accounts are displayed")
-    public void verify_that_following_Credit_Accounts_are_displayed() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-    @Then("verify that following Balance are displayed under Credit Accounts")
-    public void verify_that_following_Balance_are_displayed_under_Credit_Accounts() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-    @Then("verify that following Loan Accounts are displayed")
-    public void verify_that_following_Loan_Accounts_are_displayed() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-    @Then("verify that following  are displayed under Credit Accounts")
-    public void verify_that_following_are_displayed_under_Credit_Accounts() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
 
 
 
