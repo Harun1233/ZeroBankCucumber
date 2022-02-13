@@ -1,0 +1,325 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2999600,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6995900,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user enters valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "navigate to \"account_activity\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"account_activity\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-13T15:23:37.843Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1998600,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Title verification",
+        "description": "",
+        "id": "account-activity-page;title-verification",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1998600,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify that the page title is \"Zero – Account activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero – Account activity\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.verify_that_the_page_title_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999100,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user enters valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "navigate to \"account_activity\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"account_activity\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-13T15:23:38.123Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Account dropdown options verification",
+        "description": "",
+        "id": "account-activity-page;account-dropdown-options-verification",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "account dropdown should have \"Savings\" as a default option",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "account dropdown should have \"Savings, Checking, Loan, Credit Card, Brokerage\" options",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user enters valid credentials",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginDefinitions.user_enters_valid_credentials()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "navigate to \"account_activity\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"account_activity\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.navigate_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-13T15:23:38.161Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Transaction table column names verification",
+        "description": "",
+        "id": "account-activity-page;transaction-table-column-names-verification",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "transaction table should have \"Date, Description, Deposit,Withdrawal\" as column name",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Account Activity page",
+    "description": "",
+    "id": "account-activity-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/accountactivity.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
