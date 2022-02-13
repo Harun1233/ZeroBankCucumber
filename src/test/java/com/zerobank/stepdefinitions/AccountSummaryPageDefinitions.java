@@ -1,6 +1,7 @@
 package com.zerobank.stepdefinitions;
 
 import com.zerobank.pages.AccountSummaryPage;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -16,9 +17,12 @@ public class AccountSummaryPageDefinitions {
         accountSummaryPage.navigateToPages(string);
     }
 
-    @Then("verify that the page title is {string}")
+    @And("verify that the page title is {string}")
     public void verify_that_the_page_title_is(String string) {
         String title = accountSummaryPage.getTitle();
+
+        title.trim();
+
 
 
         Assert.assertTrue("Verify the title",string.equals(title));
