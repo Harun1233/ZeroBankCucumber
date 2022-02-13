@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1174622200,
+              "duration": 1088366600,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 2700637800,
+              "duration": 2564623700,
               "status": "passed"
             },
             "line": 5,
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-13T14:35:43.773Z",
+        "start_timestamp": "2022-02-13T14:51:09.945Z",
         "before": [
           {
             "result": {
-              "duration": 3360857200,
+              "duration": 3353495500,
               "status": "passed"
             },
             "match": {
@@ -48,14 +48,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "Account summary pages should have the given account type",
+        "line": 23,
+        "name": "Credit Accounts under Account summary page should have given account types",
         "description": "",
-        "id": "account-summary-page;account-summary-pages-should-have-the-given-account-type",
+        "id": "account-summary-page;credit-accounts-under-account-summary-page-should-have-given-account-types",
         "after": [
           {
             "result": {
-              "duration": 1021902000,
+              "duration": 1062032600,
               "status": "passed"
             },
             "match": {
@@ -68,10 +68,10 @@
         "steps": [
           {
             "result": {
-              "duration": 840261900,
+              "duration": 933870100,
               "status": "passed"
             },
-            "line": 14,
+            "line": 24,
             "name": "navigate to Account summary page",
             "match": {
               "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.navigate_to_Account_summary_page()"
@@ -80,33 +80,28 @@
           },
           {
             "result": {
-              "duration": 190909000,
+              "duration": 54972100,
               "status": "passed"
             },
-            "line": 15,
-            "name": "verify that following given account types are displayed on the page",
+            "line": 25,
+            "name": "verify that following given account types are displayed under Credit Accounts column",
             "match": {
-              "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.verify_that_following_given_account_types_are_displayed_on_the_page(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.verify_that_following_given_account_types_are_displayed_under_Credit_Accounts_column(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "Cash Accounts"
+                  "Account"
                 ]
               },
               {
                 "cells": [
-                  "Investment Accounts"
+                  "Credit Card"
                 ]
               },
               {
                 "cells": [
-                  "Credit Accounts"
-                ]
-              },
-              {
-                "cells": [
-                  "Loan Accounts"
+                  "Balance"
                 ]
               }
             ],

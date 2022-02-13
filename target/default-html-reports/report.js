@@ -33,7 +33,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Account summary pages should have the given account type",
+  "name": "Credit Accounts under Account summary page should have given account types",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -53,9 +53,8 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify that following given account types are displayed on the page",
+  "name": "verify that following given account types are displayed under Credit Accounts column",
   "rows": [
-    {},
     {},
     {},
     {}
@@ -63,7 +62,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.verify_that_following_given_account_types_are_displayed_on_the_page(java.util.List\u003cjava.lang.String\u003e)"
+  "location": "com.zerobank.stepdefinitions.AccountSummaryPageDefinitions.verify_that_following_given_account_types_are_displayed_under_Credit_Accounts_column(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"

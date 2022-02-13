@@ -41,6 +41,15 @@ public class AccountSummaryPageDefinitions {
     @Then("verify that following given account types are displayed under Credit Accounts column")
     public void verify_that_following_given_account_types_are_displayed_under_Credit_Accounts_column(List<String> creditAccountTypes) {
 
+        String creditAcoountTypes = new AccountSummaryPage().getCreditAcoountTypes();
+
+
+        for (String creditAccountType : creditAccountTypes) {
+
+            Assert.assertTrue("Verify that given account types are displayed under Credit Account Types",creditAcoountTypes.contains(creditAccountType));
+
+        }
+
     }
 
 
