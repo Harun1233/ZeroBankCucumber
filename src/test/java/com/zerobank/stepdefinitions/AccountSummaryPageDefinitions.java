@@ -10,16 +10,16 @@ import java.util.List;
 public class AccountSummaryPageDefinitions {
     AccountSummaryPage accountSummaryPage=new AccountSummaryPage();
 
-    @Given("navigate to Account summary page")
-    public void navigate_to_Account_summary_page() {
-       accountSummaryPage.navigateToOnlineBank();
-       accountSummaryPage.accountSummaryButton.click();
+    @Given("navigate to {string} page")
+    public void navigate_to_page(String string) {
+        accountSummaryPage.navigateToOnlineBank();
+        accountSummaryPage.navigateToPages(string);
     }
 
     @Then("verify that the page title is {string}")
     public void verify_that_the_page_title_is(String string) {
         String title = accountSummaryPage.getTitle();
-        System.out.println("title = " + title);
+
 
         Assert.assertTrue("Verify the title",string.equals(title));
 

@@ -1,6 +1,7 @@
 package com.zerobank.pages;
 
 import com.zerobank.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
@@ -39,5 +40,11 @@ public abstract class BasePage {
     public String getTitle(){
 
         return Driver.get().getTitle();
+    }
+
+    public void navigateToPages(String str){
+
+        Driver.get().findElement(By.id(str+"_link")).click();
+
     }
 }
