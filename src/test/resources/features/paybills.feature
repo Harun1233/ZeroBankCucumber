@@ -12,22 +12,27 @@ Feature: Pay Bills page
     Given user completes the form succesfully
     Then verify that "The payment was successfully submitted." message is displayed
 
-  @wip
+
   Scenario: Warning message should display when user tries to complete the payment without entering amount
     Given user tries to complete payment without inserting amount
     And warning message "Please fill in this field." message is popped up for "amount"
 
-  @wip
+
   Scenario: Warning message should display when user tries to complete the payment without entering  date
     And user tries to complete payment without inserting date
     Then warning message "Please fill in this field." message is popped up for "date"
-
-  Scenario: Amount section should not accept characters apart from numbers
-    Given user completes the payment form by inserting invalid characters into amount input box
+  @wip
+  Scenario: Amount section should not accept alphabetical characters
+    Given user completes the payment form by inserting "abc" amount input box
+    Then verify that "The payment was successfully submitted." warning message is not displayed
+    @wip
+    Scenario: Amount section should not accept special characters
+    Given user completes the payment form by inserting "£$%" amount input box
     Then verify that "The payment was successfully submitted." warning message is not displayed
 
+  @wip
   Scenario: Date section should not accept alphabetical characters
-    Given user complete the payment form by inserting alphabetical characters into date input box
+    Given user complete the payment form by inserting "abc" into date input box
     Then verify that "The payment was successfully submitted." warning message is not displayed
 
 

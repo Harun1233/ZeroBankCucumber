@@ -24,10 +24,8 @@ public class Driver {
             switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
-                    ChromeOptions capability = new ChromeOptions();
-                    capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-                    capability.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
-                    driver=new ChromeDriver(capability);
+
+                    driver=new ChromeDriver();
                     break;
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();

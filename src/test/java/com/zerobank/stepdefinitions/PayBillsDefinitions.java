@@ -57,23 +57,27 @@ public class PayBillsDefinitions {
 
     }
 
-
-
-    @Given("user completes the payment form by inserting invalid characters into amount input box")
-    public void user_completes_the_payment_form_by_inserting_invalid_characters_into_amount_input_box() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Given("user completes the payment form by inserting {string} amount input box")
+    public void user_completes_the_payment_form_by_inserting_amount_input_box(String string) {
+        payBillsPage.succesForm(string,"12022022");
     }
 
     @Then("verify that {string} warning message is not displayed")
     public void verify_that_warning_message_is_not_displayed(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertFalse(payBillsPage.warningMessage.isDisplayed());
     }
 
-    @Given("user complete the payment form by inserting alphabetical characters into date input box")
-    public void user_complete_the_payment_form_by_inserting_alphabetical_characters_into_date_input_box() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Given("user complete the payment form by inserting {string} into date input box")
+    public void user_complete_the_payment_form_by_inserting_into_date_input_box(String string) {
+     payBillsPage.succesForm("5",string);
+
     }
+
+
+
+
+
+
+
+
 }
